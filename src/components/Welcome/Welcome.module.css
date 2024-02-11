@@ -1,0 +1,60 @@
+.main {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button_ctn {
+    width: 100%;
+    min-height: 40vh;
+
+    background-color: var(--foreground-color);
+    border-radius: 20px 20px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_input {
+    appearance: none;
+    background-color: var(--foreground-color);
+    border: none;
+    border-bottom: 1px solid var(--details-color);
+    margin: 2% 0;
+    color: var(--details-color);
+}
+
+.custom_input::placeholder {
+    color: var(--details-color);
+}
+
+.button_ctn input:focus {
+    border: none;
+    border-bottom: 1px solid var(--foreground-color);
+}
+
+.button {
+    width: 75%;
+    min-height: 8vh;
+    margin: 3% 0;
+    background-color: var(--details-color);
+    ;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 8vh;
+}
+
+.change_action {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.error {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: red;
+    color: white;
+    text-align: center;
+}

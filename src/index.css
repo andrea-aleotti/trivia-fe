@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
 
+:root {
+    --background-color: #3D348B;
+    --foreground-color: #E6AF2E;
+    --details-color: #E0E2DB;
+    --text-color: #191716;
+}
+
 body,
 html {
     margin: 0;
@@ -10,6 +17,15 @@ html {
     box-sizing: border-box;
 
     font-size: 22px;
-    color: #191716;
+    color: var(--text-color);
     font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+
+    display: flex;
+    flex-direction: column;
 }

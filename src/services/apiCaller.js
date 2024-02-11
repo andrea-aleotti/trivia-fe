@@ -1,6 +1,7 @@
 async function apiCaller(url, method, data) {
 
     let completeUrl = "http://127.0.0.1:3000/" + url;
+
     try {
         const response = await fetch(completeUrl, {
             method: method, // or 'GET', 'PUT', 'DELETE', etc. depending on your API
@@ -8,7 +9,7 @@ async function apiCaller(url, method, data) {
                 'Content-Type': 'application/json',
                 // Add any other headers required by your API
             },
-            body: data,
+            body: JSON.stringify(data),
         });
         if (!response.ok) {
             throw new Error('Network response was not ok');

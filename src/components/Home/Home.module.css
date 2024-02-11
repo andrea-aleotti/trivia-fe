@@ -1,0 +1,26 @@
+.main {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modalita_ctn {
+    width: 90%;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 2vh;
+    background-color: var(--foreground-color);
+}
+
+.modalita_text {
+    margin: 5%;
+}
+
+.modalita {
+    background-color: var(--details-color);
+    margin: 5%;
+    text-align: center;
+    line-height: 8vh;
+    min-height: 8vh;
+    border-radius: 20px;
+}

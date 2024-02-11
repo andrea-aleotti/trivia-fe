@@ -1,0 +1,14 @@
+.navbar {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--foreground-color);
+    border-radius: 20px 20px 0 0;
+}
+
+.svg {
+    width: 5vh;
+}
